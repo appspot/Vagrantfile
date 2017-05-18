@@ -36,7 +36,8 @@ source ~/.bash_profileifconfig
 mkdir ~/.pip
 bash -c "cat /vagrant/pip.conf > ~/.pip/pip.conf"
 
-# install python
+# install python, use qiuniu CDN moirrors, Very Fast in China!!!
+export PYTHON_BUILD_MIRROR_URL="http://pyenv.qiniudn.com/pythons/" 
 pyenv install 3.5.0
 
 # make develop folder, use Python 2.7.10, named '~/www', and Actived
